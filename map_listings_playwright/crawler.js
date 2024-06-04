@@ -44,7 +44,7 @@ async function getListingDetails(page, listingUrl) {
         listingsUrlList.push(listingUrl);
     }
 
-    // Scrolling part cuurently not working. It just adds same same links 10 times in loop rather than 10 times different links in total
+    // Scrolling part currently not working. It just adds same same links 10 times in loop rather than 10 times different links in total
     for (let i = 0; i < 10; i++) { 
         // Scroll down
         await page.evaluate(() => {
